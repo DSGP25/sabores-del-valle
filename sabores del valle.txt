@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sabores del Valle - Estrategia USA</title>
+  <style>
+    :root {
+      --primary-color: #2e7d32; /* Verde bandeira */
+      --secondary-color: #fdd835; /* Amarillo bandeira */
+      --accent-color: #d32f2f; /* Rojo bandeira */
+      --text-color: #212121;
+      --bg-color: #f4f4f4;
+      --button-bg: #4caf50;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      background-color: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav a.active {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    section {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 2rem;
+      margin-bottom: 3rem;
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      border-left: 5px solid var(--accent-color);
+      padding-left: 10px;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .toggle-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--button-bg);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #388e3c;
+      transform: scale(1.05);
+    }
+
+    .details {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #fff3e0;
+      border-left: 5px solid var(--accent-color);
+      display: none;
+    }
+
+    .details.show {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: var(--primary-color);
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .back-to-top:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Estrategia Creativa de Internacionalización y Marketing</h1>
+    <p><strong>Sabores del Valle - EE. UU.</strong></p>
+  </header>
+
+  <nav id="navbar">
+    <a href="#intermediarios" class="active">Intermediarios</a>
+    <a href="#adaptacion">Adaptación</a>
+    <a href="#campana">Campaña</a>
+    <a href="#indicadores">Indicadores</a>
+    <a href="#lecciones">Lecciones</a>
+  </nav>
+
+  <main>
+
+    <!-- Sección Intermediarios -->
+    <div id="intermediarios" class="tab-content active">
+      <section>
+        <h2>2. Intermediarios para entrar al mercado</h2>
+        <ul>
+          <li><strong>Subsidiaria desde Colombia:</strong> Creamos <strong>"Sabores del Valle USA Inc."</strong> como una marca exportadora nacida en Colombia, diseñada para distribuir productos auténticos colombianos directamente a EE.UU.</li>
+          <li><strong>Distribuidor especializado:</strong> Alianza con empresas líderes en alimentos latinos como <strong>Goya Foods</strong> o <strong>Cordialsa USA</strong> para llegar a cadenas clave:
+            <ul>
+              <li><strong>Grandes superficies:</strong> Walmart, Target, Kroger</li>
+              <li><strong>Tiendas especializadas:</strong> Mercados latinos independientes</li>
+              <li><strong>Venta online:</strong> Amazon, Walmart.com</li>
+            </ul>
+          </li>
+          <li><strong>Plataformas digitales:</strong> Integración con <strong>Instacart</strong> y <strong>UberEats Market</strong> para acceso rápido a consumidores urbanos en EE.UU.</li>
+        </ul>
+        <button class="toggle-btn" onclick="showDetails('intermediarios')">Mostrar detalles</button>
+        <div class="details" id="intermediarios-details">
+          <p><strong>Estrategia logística:</strong> Trabajamos con socios estratégicos para garantizar frescura y cumplimiento normativo en EE.UU., incluyendo certificaciones FDA y empaques resistentes al transporte internacional.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sección Adaptación -->
+    <div id="adaptacion" class="tab-content">
+      <section>
+        <h2>3. Adaptación cultural del producto</h2>
+        <ul>
+          <li>Empaques bilingües (español-inglés).</li>
+          <li>Opciones sin gluten, veganas y reducidas en azúcar.</li>
+          <li>Campañas con influencers latinos en TikTok y YouTube.</li>
+        </ul>
+        <button class="toggle-btn" onclick="showDetails('adaptacion')">Mostrar detalles</button>
+        <div class="details" id="adaptacion-details">
+          <p><strong>Ejemplo práctico:</strong> Para el mercado vegano, desarrollamos arepas de quinoa y empanadas con relleno de lentejas, manteniendo el sabor tradicional pero adaptado a dietas modernas.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sección Campaña -->
+    <div id="campana" class="tab-content">
+      <section>
+        <h2>4. Campaña de lanzamiento en EE. UU.</h2>
+        <p><strong>Nombre:</strong> “Prueba el sabor que baila”</p>
+        <ul>
+          <li>Sampling en supermercados y eventos culturales.</li>
+          <li>TikTok Challenge con cumbia o champeta.</li>
+          <li>Embajadores de marca como chefs latinos reconocidos.</li>
+        </ul>
+        <button class="toggle-btn" onclick="showDetails('campana')">Mostrar detalles</button>
+        <div class="details" id="campana-details">
+          <p><strong>Ejemplo viral:</strong> Un video tutorial de un chef preparando arepas con nuestro producto, combinando ritmos colombianos con estética urbana estadounidense.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sección Indicadores -->
+    <div id="indicadores" class="tab-content">
+      <section>
+        <h2>5. Indicadores de éxito</h2>
+        <ul>
+          <li>Ventas mensuales en EE.UU.</li>
+          <li>Número de puntos de venta afiliados.</li>
+          <li>Seguidores y engagement en redes sociales.</li>
+          <li>Participación de mercado en alimentos latinos.</li>
+        </ul>
+        <button class="toggle-btn" onclick="showDetails('indicadores')">Mostrar detalles</button>
+        <div class="details" id="indicadores-details">
+          <p><strong>Meta inicial:</strong> Alcanzar $500,000 en ventas en los primeros 6 meses y 500 tiendas afiliadas en 2025.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sección Lecciones -->
+    <div id="lecciones" class="tab-content">
+      <section>
+        <h2>🧠 Lecciones de Nutresa aplicadas</h2>
+        <ul>
+          <li>Crear filiales (ej: Cordialsa USA).</li>
+          <li>Asociarse con empresas locales (ej: AbiMar Foods).</li>
+          <li>Aprovechar canales digitales + grandes superficies.</li>
+          <li>Adaptar productos al gusto local sin perder identidad.</li>
+        </ul>
+        <button class="toggle-btn" onclick="showDetails('lecciones')">Mostrar detalles</button>
+        <div class="details" id="lecciones-details">
+          <p><strong>Caso de éxito:</strong> Nutresa usó alianzas con Walmart para expandirse, lo cual replicaremos con nuestra entrada en Target y Amazon.</p>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+  <footer>
+    &copy; 2025 Sabores del Valle - Todos los derechos reservados.
+  </footer>
+
+  <script>
+    // Función para mostrar/ocultar detalles
+    function showDetails(sectionId) {
+      const details = document.getElementById(`${sectionId}-details`);
+      if (details) {
+        details.classList.toggle('show');
+      }
+    }
+
+    // Inicializar contenido principal
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mostrar la primera sección por defecto
+      const firstSection = document.querySelector('.tab-content.active');
+      if (firstSection) {
+        firstSection.style.display = 'block';
+      }
+
+      // Manejar navegación por pestañas
+      const navLinks = document.querySelectorAll('#navbar a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+
+          const target = document.getElementById(link.getAttribute('href').slice(1));
+          if (target) {
+            target.classList.add('active');
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+ 
+
+
